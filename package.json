@@ -35,6 +35,7 @@
     "@storybook/node-logger": "6.4.9",
     "@storybook/preset-create-react-app": "4.0.0",
     "@storybook/react": "6.5.0-alpha.5",
+    "@swc/core": "^1.2.138",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -49,6 +50,7 @@
     "react-app-rewired": "2.1.11",
     "react-is": "17.0.2",
     "react-scripts": "5.0.0",
+    "swc-loader": "^0.1.15",
     "vercel": "^23.1.2",
     "webpack-bundle-analyzer": "4.5.0"
   },

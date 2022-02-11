@@ -9,7 +9,12 @@ const Root = () => {
   }
 
   if (data) {
-    return <div>{data.message}</div>
+    return (
+      <div>
+        hello world
+        {data.message}
+      </div>
+    )
   }
 
   return null
