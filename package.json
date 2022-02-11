@@ -1,0 +1,67 @@
+{
+  "name": "frontendmentor-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "patch-package",
+    "lint": "eslint src test *.js api",
+    "dev": "react-app-rewired start -p 9229 --debug-apis",
+    "start": "vercel dev",
+    "build": "react-app-rewired build",
+    "build:analyze": "ANALYZE=true yarn build",
+    "jest": "CI=true react-app-rewired test --silent",
+    "test": "yarn lint && yarn jest && yarn build",
+    "storybook:server": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "dependencies": {
+    "@emotion/react": "11.7.1",
+    "@emotion/styled": "11.6.0",
+    "history": "^5.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-query": "^3.34.7",
+    "react-router-dom": "5.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.16.7",
+    "@babel/eslint-parser": "7.16.5",
+    "@babel/preset-env": "7.16.7",
+    "@babel/preset-react": "7.16.7",
+    "@emotion/babel-preset-css-prop": "11.2.0",
+    "@storybook/addon-actions": "6.4.9",
+    "@storybook/addon-essentials": "6.4.9",
+    "@storybook/addon-links": "6.4.9",
+    "@storybook/node-logger": "6.4.9",
+    "@storybook/preset-create-react-app": "4.0.0",
+    "@storybook/react": "6.5.0-alpha.5",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "babel-loader": "8.2.3",
+    "customize-cra": "1.0.0",
+    "eslint-config-mcrowder65": "4.0.1",
+    "http-proxy-middleware": "^2.0.1",
+    "jest-axe": "5.0.1",
+    "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0",
+    "prettier": "2.5.1",
+    "react-app-rewired": "2.1.11",
+    "react-is": "17.0.2",
+    "react-scripts": "5.0.0",
+    "vercel": "^23.1.2",
+    "webpack-bundle-analyzer": "4.5.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+diff --git a/node_modules/eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.development.js b/node_modules/eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.development.js
+index cff0f40..0173b3b 100644
+--- a/node_modules/eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.development.js
++++ b/node_modules/eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.development.js
+@@ -904,7 +904,7 @@ var ExhaustiveDeps = {
+         var _callee = callee,
+             name = _callee.name;
+   
+-        if (name === 'useRef' && id.type === 'Identifier') {
++        if ((name === 'useRef' || 'useCallbackRef') && id.type === 'Identifier') {
+           // useRef() return value is stable.
+           return true;
+         } else if (name === 'useState' || name === 'useReducer') {
